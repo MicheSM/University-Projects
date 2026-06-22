@@ -1,0 +1,267 @@
+
+*** Running vivado
+    with args -log MSM_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MSM_wrapper.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source MSM_wrapper.tcl -notrace
+Command: synth_design -top MSM_wrapper -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20224
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MSM_wrapper' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/MSM_wrapper.vhd:15]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/DFF_N.vhd:4' bound to instance 'FCW_INPUT_REG' of component 'DFF_N' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/MSM_wrapper.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'DFF_N' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/DFF_N.vhd:17]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DFF_N' (1#1) [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/DFF_N.vhd:17]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/DFF_N.vhd:4' bound to instance 'PCW_INPUT_REG' of component 'DFF_N' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/MSM_wrapper.vhd:68]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/DFF_N.vhd:4' bound to instance 'ACW_INPUT_REG' of component 'DFF_N' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/MSM_wrapper.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'DFF_N__parameterized2' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/DFF_N.vhd:17]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DFF_N__parameterized2' (1#1) [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/DFF_N.vhd:17]
+INFO: [Synth 8-3491] module 'MSM' declared at 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/MSM.vhd:4' bound to instance 'MSM_CORE' of component 'MSM' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/MSM_wrapper.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'MSM' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/MSM.vhd:15]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/Counter.vhd:4' bound to instance 'PHASE_ACCUMULATOR' of component 'Counter' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/MSM.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'Counter' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/Counter.vhd:18]
+	Parameter N bound to: 16 - type: integer 
+	Parameter Nbit bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'ripple_carry_adder' declared at 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/ripple_carry_adder.vhd:4' bound to instance 'FULL_ADDER_N_i' of component 'ripple_carry_adder' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/Counter.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'ripple_carry_adder' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/ripple_carry_adder.vhd:17]
+	Parameter Nbit bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ripple_carry_adder' (2#1) [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/ripple_carry_adder.vhd:17]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/DFF_N.vhd:4' bound to instance 'DFF_N_i' of component 'DFF_N' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/Counter.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'Counter' (3#1) [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/Counter.vhd:18]
+	Parameter Nbit bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'ripple_carry_adder' declared at 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/ripple_carry_adder.vhd:4' bound to instance 'PHASE_ADDER' of component 'ripple_carry_adder' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/MSM.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'ripple_carry_adder__parameterized1' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/ripple_carry_adder.vhd:17]
+	Parameter Nbit bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ripple_carry_adder__parameterized1' (3#1) [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/ripple_carry_adder.vhd:17]
+INFO: [Synth 8-3491] module 'lut_7bit_11bit_quad' declared at 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/lut_7bit_11bit_quad.vhd:5' bound to instance 'LUT_INSTANCE' of component 'lut_7bit_11bit_quad' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/MSM.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'lut_7bit_11bit_quad' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/lut_7bit_11bit_quad.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'lut_7bit_11bit_quad' (4#1) [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/lut_7bit_11bit_quad.vhd:12]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/DFF_N.vhd:4' bound to instance 'PIPELINE_REG' of component 'DFF_N' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/MSM.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'DFF_N__parameterized4' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/DFF_N.vhd:17]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DFF_N__parameterized4' (4#1) [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/DFF_N.vhd:17]
+INFO: [Synth 8-3491] module 'array_multiplier_11x4' declared at 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/array_multiplier_11x4.vhd:4' bound to instance 'AMPLITUDE_MULT' of component 'array_multiplier_11x4' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/MSM.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'array_multiplier_11x4' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/array_multiplier_11x4.vhd:12]
+	Parameter Nbit bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'ripple_carry_adder' declared at 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/ripple_carry_adder.vhd:4' bound to instance 'RCA_ROW_1' of component 'ripple_carry_adder' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/array_multiplier_11x4.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'ripple_carry_adder__parameterized3' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/ripple_carry_adder.vhd:17]
+	Parameter Nbit bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ripple_carry_adder__parameterized3' (4#1) [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/ripple_carry_adder.vhd:17]
+	Parameter Nbit bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'ripple_carry_adder' declared at 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/ripple_carry_adder.vhd:4' bound to instance 'RCA_ROW_2' of component 'ripple_carry_adder' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/array_multiplier_11x4.vhd:102]
+	Parameter Nbit bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'ripple_carry_adder' declared at 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/ripple_carry_adder.vhd:4' bound to instance 'RCA_ROW_3' of component 'ripple_carry_adder' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/array_multiplier_11x4.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'array_multiplier_11x4' (5#1) [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/array_multiplier_11x4.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'MSM' (6#1) [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/MSM.vhd:15]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/DFF_N.vhd:4' bound to instance 'Y_OUTPUT_REG' of component 'DFF_N' [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/MSM_wrapper.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'MSM_wrapper' (7#1) [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/src/MSM_wrapper.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1262.492 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/vivado/MSM/MSM.srcs/constrs_1/new/msm_zybo_constraint.xdc]
+Finished Parsing XDC File [C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/vivado/MSM/MSM.srcs/constrs_1/new/msm_zybo_constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1262.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 65    
++---Registers : 
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |     2|
+|2     |LUT3  |    11|
+|3     |LUT4  |    14|
+|4     |LUT5  |    33|
+|5     |LUT6  |    65|
+|6     |MUXF7 |    10|
+|7     |FDCE  |    80|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1262.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1262.492 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1262.492 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1262.492 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1262.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 345432c1
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1262.492 ; gain = 49.422
+INFO: [Common 17-1381] The checkpoint 'C:/Users/miche/Desktop/Uni/EaCS/VHDLProjects/MSM/vivado/MSM/MSM.runs/synth_1/MSM_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MSM_wrapper_utilization_synth.rpt -pb MSM_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  8 12:49:48 2026...
